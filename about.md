@@ -1,21 +1,11 @@
 ---
 layout: page
-title: About
+title: about me
 permalink: /about/
 ---
 
-<p> I am a first year graduate student at Princeton. Recently, I have joined the <a href="http://molbio.princeton.edu/labs/donia">Donia Lab</a> in the Molecular Biology Department. I want to apply computational approaches to biological problems, mentor students of underrepresented groups like myself, advocate for increasing diversity in STEM fields, and educate and encourage scientific curiosity in others.  </p>
-
-### More Information
+<p> I'm currently a Senior Bioinformatics Scientist at <a href="https://www.viomelifesciences.com/">Viome Life Sciences</a>.</p>
 
 
-<p>I am an officer of the Princeton Data Science club and a member of the SACNAS Chapter in Princeton. </p>
-
-### Contact me
-
-[fcamacho@princeton.edu](mailto:fcamacho@princeton.edu)
-
-
-
-
-
+### contact me
+[camachofrancine@gmail.com](mailto:camachofrancine@gmail.com)

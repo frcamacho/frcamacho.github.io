@@ -3,8 +3,8 @@
   <channel>
     <title>Francine Camacho</title>
     <description>Ph.D. Candidate in Quantitative and Computational Biology @ Princeton University</description>
-    <link>http://frcamacho.github.io</link>
-    <atom:link href="http://frcamacho.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:4000</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
         <title>How To Use Knitr With Markdown In Rstudio</title>
@@ -48,16 +48,16 @@ Replace &lt;strong&gt;“Untitled”&lt;/strong&gt; with whatever title you want
 
 &lt;h2 id=&quot;basic-markdown-syntax&quot;&gt;Basic Markdown Syntax&lt;/h2&gt;
 
-&lt;p&gt;In Markdown, R code can be used to render R output or to simply display your R code for illustration like this: &lt;/p&gt;
+&lt;p&gt;In Markdown, R code can be used to render R output or to simply display your R code for illustration like this:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;```{r}
- 
-# PLACE R CODE HERE 
+
+# PLACE R CODE HERE
 
 ```
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;You can also embed plots to your report in Markdown like this: &lt;/p&gt;
+&lt;p&gt;You can also embed plots to your report in Markdown like this:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;```{r, echo=FALSE}
 plot(variable)
@@ -69,16 +69,16 @@ plot(variable)
 &lt;pre&gt;&lt;code&gt;```
 
 `echo = FALSE` # prevent printing of the R code that generated the plot.
-`echo = TRUE` # prints R code and the output of that R code 
+`echo = TRUE` # prints R code and the output of that R code
 
 ```
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;For more stylistic functions in Markdown visit: &lt;/p&gt;
+&lt;p&gt;For more stylistic functions in Markdown visit:&lt;/p&gt;
 
 &lt;p&gt;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&lt;/p&gt;
 
-&lt;h1 id=&quot;pdfs-with-markdown-and-knitr&quot;&gt;PDFs with Markdown and Knitr&lt;/h1&gt;
+&lt;p&gt;#PDFs with Markdown and Knitr&lt;/p&gt;
 
 &lt;p&gt;In MarkDown to &lt;strong&gt;Knit PDFs&lt;/strong&gt; you will need to install &lt;strong&gt;TeX&lt;/strong&gt;.&lt;/p&gt;
 
@@ -94,18 +94,17 @@ plot(variable)
 
 &lt;p&gt;&lt;a href=&quot;https://www.tug.org/texlive/quickinstall.html&quot;&gt;Download&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;once-tex-is-installed-on-your-computer-knitting-a-pdf-is-easy&quot;&gt;Once TeX is installed on your computer knitting a PDF is easy!&lt;/h3&gt;
+&lt;p&gt;###Once TeX is installed on your computer knitting a PDF is easy!&lt;/p&gt;
 
-&lt;p&gt;Change the &lt;strong&gt;output&lt;/strong&gt; from &lt;em&gt;“HTML_document”&lt;/em&gt; to &lt;em&gt;“pdf_document”&lt;/em&gt; (Red Box in the image below) &lt;/p&gt;
+&lt;p&gt;Change the &lt;strong&gt;output&lt;/strong&gt; from &lt;em&gt;“HTML_document”&lt;/em&gt; to &lt;em&gt;“pdf_document”&lt;/em&gt; (Red Box in the image below)&lt;/p&gt;
 
-&lt;p&gt;Finally click Knit PDF (in red)  CONGRATULATIONS you have successfully knitted a knitr PDF with Markdown in Rstudio! &lt;/p&gt;
+&lt;p&gt;Finally click Knit PDF (in red)  CONGRATULATIONS you have successfully knitted a knitr PDF with Markdown in Rstudio!&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://frcamacho.github.io/images/final_knit.png&quot; alt=&quot;alt text&quot; /&gt;&lt;/p&gt;
-
 </description>
         <pubDate>Wed, 15 Oct 2014 00:00:00 -0400</pubDate>
-        <link>http://frcamacho.github.io/How-to-Use-Knitr-with-MarkDown-in-RStudio/</link>
-        <guid isPermaLink="true">http://frcamacho.github.io/How-to-Use-Knitr-with-MarkDown-in-RStudio/</guid>
+        <link>http://localhost:4000/How-to-Use-Knitr-with-MarkDown-in-RStudio/</link>
+        <guid isPermaLink="true">http://localhost:4000/How-to-Use-Knitr-with-MarkDown-in-RStudio/</guid>
       </item>
     
   </channel>
