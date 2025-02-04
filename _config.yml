@@ -1,8 +1,8 @@
 # -------------------
 # Jekyll Config
 # --------------------
-baseurl: "/frcamacho.github.io"
-url: ""
+baseurl: ""
+url: "https://frcamacho.github.io"
 permalink: pretty
 markdown: kramdown
 highlighter: rouge

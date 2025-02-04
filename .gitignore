@@ -5,10 +5,10 @@ npm-debug.log
 # Ruby 
 
 # Jekyll
-_site
+_site/
+.sass-cache/
+.jekyll-cache/
 .jekyll-metadata
-.sass-cache
-.jekyll-cache
 
 # Temporary files
 tmp
