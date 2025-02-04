@@ -1,56 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
 
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    {% include framework/seo-meta-tags.html %}
+    {% include framework/og-meta-tags.html %}
+    {% include framework/feed.html %}
+    {% include framework/favicon.html %}
 
-    <meta name="author" content="{{ site.name }}" />
-    <meta name="description" content="{{ site.description }}">
+    <link href="{{ '/assets/css/main.css' | relative_url }}" rel="stylesheet">
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    {% if site.darkmode.enable_dark_mode != false %}
+      <script>
+          localStorage.getItem('darkMode') === 'true' && document.documentElement.setAttribute('data-bs-theme', 'dark');
+      </script>
+    {% endif %}
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    {% if site.cookie_banner.enabled %}
+      {% include framework/cookie-consent.html %}
+    {% endif %}
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    {% include framework/fonts.html %}
+    {% include framework/google-tag-manager.html %}
+
   </head>
+<body class="page {% if page.body_classes %}{{ page.body_classes }}{% elsif layout.body_classes %}{{ layout.body_classes }}{% endif %}{% if site.header.fixed %} has-fixed-header{% else %} has-static-header{% endif %}">
 
-  <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-          
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
-          
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
-      </div>
-    </div>
+{% include framework/menu-main-mobile.html %}
+{% include framework/header.html %}
 
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
+<div id="wrapper" class="wrapper">     
+  {{ content }}
+</div>
 
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div>
+{% if site.footer.enable_footer %}
+  {% include framework/footer.html %}
+{% endif %}
+{% if site.bottom.enable_bottom %}
+  {% include framework/bottom.html %}
+{% endif %}
 
-    {% include analytics.html %}
-  </body>
+<script type="text/javascript" src="{{ '/assets/js/scripts.js' | relative_url }}"></script>
+{% if site.header.fixed %}
+  <script type="text/javascript" src="{{ '/assets/js/header.js' | relative_url }}"></script>
+{% endif %}
+<script type="text/javascript" src="{{ '/assets/js/hamburger.js' | relative_url }}"></script>
+<script type="text/javascript" src="{{ '/assets/js/darkModeSwitch.js' | relative_url }}"></script>
+
+{% include framework/google-analytics.html %}
+{% include framework/plausible-analytics.html %}
+{% include framework/umami-analytics.html %}
+
+</body>
 </html>
