@@ -1,10 +1,10 @@
 ---
 layout: home
 permalink: "/"
-title: "Curate is a premium portfolio for <strong>Jekyll.</strong>"
-description: "Showcase your projects, work or case studies in style with this markdown powered portfolio theme for Jekyll."
-meta_description: "Jekyll Curate is a premium Jekyll blog theme"
-meta_title: Jekyll Curate - Premium Portfolio Theme
+title: "Decoding <strong>biology</strong> with <strong>algorithms</strong>, <strong>data</strong>, and a sprinkle of <strong>curiosity</strong>."
+description: "Bridging science and technology to drive discovery and innovation."
+meta_description: "Francine Camacho, PhD | Bioinformatics, Data Science, Software Engineering."
+meta_title: "Francine Camacho - Data-Driven Innovation"
 subscribe: false
 
 projects:
